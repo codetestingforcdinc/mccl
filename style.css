@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.logo,
+.ot {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    color: #000000;
+}
+
+.ot {
+
+    float: right;
+}
+
+.gth {
+    font-size: 29px;
+}
+
+.gt {
+    font-size: 24px;
+}
+
+.gth,
+.gt,
+.qfaq,
+.afaq {
+    text-align: center;
+}
+
+.afaq {
+    font-size: 20px;
+}
+
+.qfaq {
+    font-size: 24px;
+}
+
+.ot:hover {
+    color: rgb(127, 178, 255);
+}
+
+.fter {
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milligram to Ounce Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Milligram to Ounce Converter</h1>
+      <input type="number" id="milligrams" placeholder="Enter milligrams" />
+      <button onclick="convert()">Convert</button>
+      <p id="result"></p>
+    </div>
+    <script>
+      function convert() {
+        const milligrams = parseFloat(
+          document.getElementById('milligrams').value
+        );
+        if (!isNaN(milligrams)) {
+          const ounces = milligrams * 0.00003527396;
+          document.getElementById(
+            'result'
+          ).textContent = `${milligrams} milligrams is equal to ${ounces} ounces.`;
+        } else {
+          document.getElementById('result').textContent =
+            'Please enter a valid number.';
+        }
+      }
+    </script>
+  </body>
+</html>

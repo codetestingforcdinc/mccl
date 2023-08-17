@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newton to Pound-Force Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Newton to Pound-Force Converter</h1>
+      <input type="number" id="newtons" placeholder="Enter newtons" />
+      <button onclick="convert()">Convert</button>
+      <p id="result"></p>
+    </div>
+    <script>
+      function convert() {
+        const newtons = parseFloat(document.getElementById('newtons').value);
+        if (!isNaN(newtons)) {
+          const poundForce = newtons * 0.22481;
+          document.getElementById(
+            'result'
+          ).textContent = `${newtons} newtons is equal to ${poundForce} pound-force.`;
+        } else {
+          document.getElementById('result').textContent =
+            'Please enter a valid number.';
+        }
+      }
+    </script>
+  </body>
+</html>

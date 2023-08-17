@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gram to Kilogram Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gram to Kilogram Converter</h1>
+      <input type="number" id="grams" placeholder="Enter grams" />
+      <button onclick="convert()">Convert</button>
+      <p id="result"></p>
+    </div>
+    <script>
+      function convert() {
+        const grams = parseFloat(document.getElementById('grams').value);
+        if (!isNaN(grams)) {
+          const kilograms = grams / 1000;
+          document.getElementById(
+            'result'
+          ).textContent = `${grams} grams is equal to ${kilograms} kilograms.`;
+        } else {
+          document.getElementById('result').textContent =
+            'Please enter a valid number.';
+        }
+      }
+    </script>
+  </body>
+</html>

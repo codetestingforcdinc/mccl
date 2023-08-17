@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JPG to PDF Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      #result {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JPG to PDF Converter</h1>
+    <input type="file" id="fileInput" accept="image/jpeg" />
+    <button id="convertBtn">Convert to PDF</button>
+    <div id="result"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="jpgtopdf.js"></script>
+  </body>
+</html>
