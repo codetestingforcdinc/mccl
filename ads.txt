@@ -1,1 +1,48 @@
-google.com, pub-5462331951075215, DIRECT, f08c47fec0942fa0
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: ads_txt</p>
+<p>Filename: views/register_view.php</p>
+<p>Line Number: 164</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/hooliganmedia/application/views/register_view.php<br />
+			Line: 164<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/hooliganmedia/application/controllers/Register.php<br />
+			Line: 81<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/hooliganmedia/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
